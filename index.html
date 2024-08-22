@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="section1">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div id="section2">
+        <div id="try">
+          Try it free 7 days <span id="txt">$20/mo. thereafter</span>
+        </div>
+        <div id="form">
+          <form action="" name="sign-up-form" novalidate>
+            <div class="fnerr">
+              <label for="first-name">
+                <input placeholder="First Name" type="text" id="first-name" />
+              </label>
+              <img
+                src="./images/icon-error.svg"
+                id="fnerror"
+                alt="error img"
+                class="hidden"
+              />
+              <span id="fnalert"></span>
+            </div>
+            <div class="lnerr">
+              <label for="last-name">
+                <input placeholder="Last Name" type="text" id="last-name" />
+              </label>
+              <img
+                src="./images/icon-error.svg"
+                id="lnerror"
+                alt="error img"
+                class="hidden"
+              />
+              <span id="lnalert"></span>
+            </div>
+            <div class="emerr">
+              <label for="email-addres">
+                <input
+                  placeholder="Email Address"
+                  type="email"
+                  id="email-addres"
+                />
+              </label>
+              <img
+                src="./images/icon-error.svg"
+                id="emerror"
+                alt="error img"
+                class="hidden"
+              />
+              <span id="emalert"></span>
+            </div>
+            <div class="paserr">
+              <label for="password">
+                <input placeholder="Password" type="password" id="password" />
+              </label>
+              <img
+                class="hidden"
+                src="./images/icon-error.svg"
+                id="paserror"
+                alt="error img"
+              />
+              <span id="pasalert"></span>
+              <img
+                class="alert"
+                src="./images/show.png"
+                alt="show img"
+                id="show-img"
+              />
+              <!-- <img
+                class="alert hidden"
+                src="./images/hide.png"
+                alt="hide png"
+                id="hide-img"
+              /> -->
+            </div>
+            <button id="button">CLAIM YOUR FREE TRIAL</button>
+            <p>
+              By clicking the button, you are agreeing to our<a
+                href="https://www.frontendmentor.io?ref=challenge"
+              >
+                Terms and Services
+              </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Akwila Agung</a>.
+      </p>
+    </footer>
+    <script src="./inde.js" defer></script>
+  </body>
+</html>

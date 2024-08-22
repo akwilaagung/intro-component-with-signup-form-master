@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap");
+
+* {
+  // background-color: palevioletred;
+  align-items: center;
+  padding: 2px;
+}
+
+body {
+  min-height: 93vh;
+  align-content: center;
+  max-height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  // background-color: transparent;
+  #section1 {
+    // background-color: transparent;
+    h1 {
+      font-size: 50px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    color: white;
+    width: 100%;
+    align-content: center;
+  }
+  #section2 {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+    #try {
+      #txt {
+        color: rgb(204, 204, 204);
+        background-color: hsl(248, 32%, 49%);
+      }
+      background-color: hsl(248, 32%, 49%);
+      color: white;
+      width: 100%;
+      margin-bottom: 20px;
+      padding-block: 20px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 187, 0.582) 0px 10px;
+    }
+    #form {
+      form {
+        padding: 25px;
+        border-radius: 10px;
+        background-color: white;
+        label {
+          background-color: white;
+        }
+        input {
+          width: 96%;
+          background-color: white;
+          margin-bottom: 10px;
+          height: 50px;
+          border-radius: 8px;
+          border-color: rgb(179, 179, 179);
+          border-style: solid;
+          cursor: pointer;
+          position: relative;
+        }
+
+        text-align: right;
+        span {
+          color: red;
+          font-size: 16px;
+          // right: -16px;
+        }
+
+        .fnerr {
+          position: relative;
+          #fnerror {
+            position: absolute;
+            right: 4%;
+            top: 17px;
+          }
+        }
+        .lnerr {
+          position: relative;
+          #lnerror {
+            position: absolute;
+            right: 4%;
+            top: 17px;
+          }
+        }
+        .emerr {
+          position: relative;
+          #emerror {
+            position: absolute;
+            right: 4%;
+            top: 17px;
+          }
+        }
+        .alert {
+          width: 20px;
+          position: absolute;
+
+          right: 11%;
+          top: 18px;
+        }
+        .paserr {
+          position: relative;
+          #paserror {
+            position: absolute;
+            right: 4%;
+            top: 17px;
+          }
+        }
+      }
+      button {
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        width: 100%;
+        padding-block: 15px;
+        box-shadow: rgb(0, 167, 0) 0px 4px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+        background-color: white;
+        font-size: 10px;
+      }
+      a {
+        background-color: rgba(255, 0, 0, 0);
+        text-decoration: none;
+        color: red;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  #section1 {
+    padding-inline: 50px;
+  }
+  #section2 {
+    width: 80%;
+  }
+  body {
+    padding-inline: 8em;
+  }
+}
+
+.hidden {
+  display: none;
+}
